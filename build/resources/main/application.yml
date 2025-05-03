@@ -1,5 +1,3 @@
-# spring.application.name=config-service
-
 server:
   port: 8888
   tomcat:
@@ -19,7 +17,7 @@ spring:
         git:
           uri: https://github.com/Tyranno-Rex/cnsia-config-repo.git
           default-label: main
-          clone-on-start: true
-          timeout: 5
-          force-pull: true
+          clone-on-start: true  # time limit connection with remote repository
+          timeout: 5            # time limit connection with remote repository
+          force-pull: true      # force pull the latest changes from the remote repository
   
